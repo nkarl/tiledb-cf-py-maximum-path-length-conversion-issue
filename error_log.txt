@@ -1,0 +1,20 @@
+ERROR:root:LOGGING THE TRACEBACK FROM CDF CONVERSION!
+Traceback (most recent call last):
+  File "C:\Users\KARL\Dev\2022.Spring\423-CAPSTONE\DataLakeAPI\Development\LocalData\implementation_TileDB\ceil_sonde\TEST_DIR\new_ceil_sonde.py", line 100, in <module>
+    sonde_converter.convert_to_group(sonde_group_uri)
+  File "C:\Users\KARL\AppData\Local\Programs\Python\Python310\lib\site-packages\tiledb\cf\netcdf_engine\converter.py", line 753, in convert_to_group
+    self.copy_to_group(
+  File "C:\Users\KARL\AppData\Local\Programs\Python\Python310\lib\site-packages\tiledb\cf\netcdf_engine\converter.py", line 924, in copy_to_group
+    self._copy_data(
+  File "C:\Users\KARL\AppData\Local\Programs\Python\Python310\lib\site-packages\tiledb\cf\netcdf_engine\converter.py", line 461, in _copy_data
+    array_creator.copy(
+  File "C:\Users\KARL\AppData\Local\Programs\Python\Python310\lib\site-packages\tiledb\cf\netcdf_engine\_array_converters.py", line 199, in copy
+    self._copy_to_array(
+  File "C:\Users\KARL\AppData\Local\Programs\Python\Python310\lib\site-packages\tiledb\cf\netcdf_engine\_array_converters.py", line 86, in _copy_to_array
+    tiledb_array[coord_values] = data
+  File "tiledb\libtiledb.pyx", line 5343, in tiledb.libtiledb.DenseArrayImpl.__setitem__
+  File "tiledb\libtiledb.pyx", line 5423, in tiledb.libtiledb.DenseArrayImpl._setitem_impl
+  File "tiledb\libtiledb.pyx", line 478, in tiledb.libtiledb._write_array
+  File "tiledb\libtiledb.pyx", line 542, in tiledb.libtiledb._raise_ctx_err
+  File "tiledb\libtiledb.pyx", line 527, in tiledb.libtiledb._raise_tiledb_error
+tiledb.libtiledb.TileDBError: [TileDB::IO] Error: Cannot write to file 'C:\Users\KARL\Dev\2022.Spring\423-CAPSTONE\DataLakeAPI\Development\LocalData\implementation_TileDB\ceil_sonde\TEST_DIR\'; File opening error
